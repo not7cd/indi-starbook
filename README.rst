@@ -25,6 +25,14 @@ In order to build this package you need:
 
     You need to install both `libnova` and `libnova-devel` to build this package.
 
+Building
+--------
+
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug ..
+make
+sudo make install
+
 Usage
 -----
 
