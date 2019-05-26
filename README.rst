@@ -1,6 +1,9 @@
 Starbook INDI Driver
 ====================
 
+.. image:: https://travis-ci.com/not7cd/indi-starbook.svg?branch=master
+    :target: https://travis-ci.com/not7cd/indi-starbook
+
 This package provides the INDI driver for the Vixen Starbook telescope controllers. This driver aims for compatibility
 with first generation Starbook.
 Starbook TEN is working to some extent with this driver. Commands exclusive to Starbook TEN won't be available.
