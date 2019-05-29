@@ -375,7 +375,7 @@ bool StarbookDriver::updateLocation(double latitude, double longitude, double el
 
     auto utc_offset = static_cast<short>(std::floor(std::strtof(TimeT[1].text, nullptr)));
     LOGF_WARN("UTC offset for location: %i", utc_offset);
-    starbook::LnLat posn(latitude, longitude);
+    starbook::LnLat posn(longitude, latitude);
     starbook::ResponseCode rc = cmd_interface->SetPlace(posn, utc_offset);
     LogResponse("Updating location", rc);
     return rc == starbook::OK;
