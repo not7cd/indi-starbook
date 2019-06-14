@@ -11,11 +11,15 @@ Starbook TEN is working to some extent with this driver. Commands exclusive to S
 Requirements
 ------------
 
+On Ubuntu
+
+Add PPA ppa:mutlaqja/ppa
+
 In order to build this package you need:
 
 + INDI >= v1.7 (http://www.indilib.org)
 
-    You need to install both `indi` and `indi-devel` to build this package.
+    You need to install both `libindi1` and `libindi-dev` to build this package.
 
 + cURL >= v7.58.0 (https://curl.haxx.se/)
 
@@ -23,7 +27,8 @@ In order to build this package you need:
 
 + libnova
 
-    You need to install both `libnova` and `libnova-devel` to build this package.
+    You need to install `libnova-dev` to build this package.
+
 
 Building
 --------
