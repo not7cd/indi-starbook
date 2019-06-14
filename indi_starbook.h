@@ -28,6 +28,14 @@
 #include "connectioncurl.h"
 #include "command_interface.h"
 
+
+/**
+ StarbookDriver is a glue between Telescope methods and ConnectionInterface.
+ Telescope gives some sort of a standard about what mount can and cannot.
+ Those methods are different in behaviour than what Starbook device provides.
+ All differences, error handling, etc. are resolved here.
+
+ */
 class StarbookDriver : public INDI::Telescope
 {
 public:

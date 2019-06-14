@@ -18,6 +18,16 @@
  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
  */
+/**
+ This file declares wrappers around LIBNOVA types used by INDI.
+ Wrappers implement stream operators used to parse and dump
+ data from and to Starbook device. This helps to hide details
+ how Starbook represents its data strings, and helps to
+ strictly create well formated responses to Starbook.
+ It's purpose is to decouple string manipulation from command logic
+
+ @author Norbert Szulc (not7cd)
+ */
 
 #pragma once
 
@@ -27,6 +37,7 @@
 #include <array>
 
 namespace starbook {
+    /* this class wraps */
     struct DMS : ln_dms {
         explicit DMS(std::string dms);
 

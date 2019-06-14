@@ -18,6 +18,16 @@
  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
  */
+/**
+ Connection::Curl wraps curl handler. It wraps it in
+ common interface that is later used to create INDI interface
+ to manipulate connection from any INDI enabled client.
+
+ Unluckily, not all behaviour could be inherited as other Connection::Interface
+ children are tightly coupled with INDI::Device.
+
+ @author Norbert Szulc
+ */
 
 #pragma once
 

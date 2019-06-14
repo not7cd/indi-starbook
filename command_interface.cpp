@@ -18,6 +18,15 @@
  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
  */
+/**
+ CommandInterface has methods representing every command
+ aviable in Starbook device. It normalizes inconsistent behaviour
+ of HTTP commands, and hides all details regarding HTTP connection.
+ It should be as framework agnostic as possible. So it can
+ be used in other pojects that don't use INDI.
+
+ @author Norbert Szulc (not7cd)
+ */
 
 #include <exception>
 #include <regex>
